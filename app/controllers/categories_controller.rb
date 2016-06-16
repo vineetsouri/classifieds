@@ -1,5 +1,11 @@
 class CategoriesController < ApplicationController
   def index
-    @categories = ["Jobs", "Products", "Services", "Education", "Marriage", "Tenders", "Events", "Real Estate"]
+    @categories = Category.all
   end
+
+  def show
+    category = Category.find(params[:id])
+    @posts = Post.where("category_id = ?", category.id)
+  end
+
 end
