@@ -12,6 +12,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 #Custom gems
 gem 'simple_form'
 gem 'sweetalert-rails'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug'
