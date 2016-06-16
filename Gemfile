@@ -9,7 +9,9 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
+#Custom gems
 gem 'simple_form'
+gem 'sweetalert-rails'
 
 group :development, :test do
   gem 'byebug'
