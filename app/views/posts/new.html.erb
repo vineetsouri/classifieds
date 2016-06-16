@@ -1,0 +1,9 @@
+<%= simple_form_for  [@user, @post]  do |f| %>
+  <%= f.input :title %>
+  <%= f.input :category %>
+  <%= f.input :description, as: :text %>
+  <%= f.input :contact_name %>
+  <%= f.input :contact_no %>
+  <%= f.input :contact_email %>
+  <%= f.button :submit %>
+<% end %>
