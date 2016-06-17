@@ -14,6 +14,14 @@
 #  updated_at    :datetime         not null
 #
 
+require 'elasticsearch/model'
+
 class Post < ActiveRecord::Base
+  include Elasticsearch::Model
+  include Elasticsearch::Model::Callbacks
+  
   belongs_to :user
+  belongs_to :category
 end
+
+Post.import force: true

@@ -14,6 +14,9 @@ gem 'simple_form'
 gem 'sweetalert-rails'
 gem 'devise'
 gem 'annotate'
+# Search related gems
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
 
 group :development, :test do
   gem 'byebug'

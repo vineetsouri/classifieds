@@ -11,3 +11,13 @@ categories = Category.count
   category = Category.create(name: Faker::Commerce.department)
   puts("#")
 end
+
+
+Category.all.each do |category|
+  (10).times do
+    post = Post.create(user_id: 4,category_id: category.id,title: Faker::Commerce.product_name,description: Faker::Hipster.paragraph,
+      contact_name: Faker::Name.name,contact_no: Faker::Number.number(10),
+      contact_email: Faker::Internet.free_email)
+    puts(".")
+  end
+end

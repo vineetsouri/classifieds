@@ -1,4 +1,4 @@
-$ ->
-  $(".sweet").click ->
-    swal("Good job!", "You clicked the button!", "success")    
+# $ ->
+#   $(".sweet").click ->
+#     swal("clicked", "Opening", "success")    
 
