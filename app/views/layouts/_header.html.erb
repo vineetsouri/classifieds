@@ -14,7 +14,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <%= link_to "Post Ad", posts_new_path, class: "btn btn-primary navbar-btn sweet" %>
+        <%= link_to "Post Ad", new_post_path, class: "btn btn-primary navbar-btn sweet" %>
         <% if user_signed_in? %>
           <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "btn btn-primary navbar-btn" %>
         <% end %>
