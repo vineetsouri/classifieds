@@ -7,13 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 categories = Category.count
-(10 - categories.count).times do
+(10 - categories).times do
   category = Category.create(name: Faker::Commerce.department)
-  # sections_count = 5 + rand(6)
-  # (sections_count - category.sections.count).times do
-  #   content = Faker::Hipster.paragraphs(1 + rand(3)).join("\n\n")
-  #   category.sections.create(title: Faker::Book.title, content: content)
-  #   dot
-  # end
-  dot
+  puts("#")
 end
