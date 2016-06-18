@@ -17,6 +17,8 @@ gem 'annotate'
 # Search related gems
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
+# internationalization gem
+gem 'rails-i18n', '~> 4.0.0'
 
 group :development, :test do
   gem 'byebug'
